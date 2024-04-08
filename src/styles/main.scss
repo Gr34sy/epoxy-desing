@@ -1,0 +1,14 @@
+// misc
+@import './misc/variables';
+@import './misc/reset';
+@import './misc/globals';
+
+
+// elements
+
+// components
+@import '../components/Navbar/navbar';
+@import '../components/ProductCard/product-card';
+
+// pages
+@import './pages/homepage';

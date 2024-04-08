@@ -1,0 +1,28 @@
+.navbar {
+  background-color: $color-dark-blue;
+  color: $color-white;
+
+  -webkit-box-shadow: -1px 6px 24px 0px $color-black;
+  -moz-box-shadow: -1px 6px 24px 0px $color-black;
+  box-shadow: -1px 6px 24px 0px $color-black;
+}
+
+.navbar__list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__list_item {
+  padding: 1.5rem 2rem;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
+}

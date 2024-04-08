@@ -1,12 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
     <main className="page">
       <div>
-        <h1>
-          Strona w trakcie przebudowy! 
+        <h1 className="header">
+          Strona w trakcie przebudowy! <br/>
           <span>Zapraszamy Niebawem</span>
         </h1>
       </div>
