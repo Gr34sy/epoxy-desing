@@ -18,12 +18,11 @@ export function Navbar() {
 
   return (
     <nav className="navbar">
-      {!showMobileNav && (
-        <FontAwesomeIcon icon={faBars} className="navbar__bars-icon" />
-      )}
-      {showMobileNav && (
-        <FontAwesomeIcon icon={faXmark} className="navbar__x-icon" />
-      )}
+      <FontAwesomeIcon
+        icon={showMobileNav ? faXmark : faBars}
+        className={showMobileNav ? "navbar__bars-icon" : "navbar__x-icon"}
+        onClick={showMobileNav ? () => setShowMobileNav(false) : () => setShowMobileNav(true)}
+      />
 
       <ul className="navbar__list">
         <li className="navbar__list_item ">
@@ -54,6 +53,25 @@ export function Navbar() {
           <Link href="/">Kontakt</Link>
         </li>
       </ul>
+
+      {/* MOBILE LIST */}
+      {showMobileNav && <ul className="navbar__list navbar__list--mobile">
+        <li className="navbar__list_item ">
+          <Link href="/">Strona Główna</Link>
+        </li>
+
+        <li className="navbar__list_item ">
+          <Link href="/">Produkty</Link>
+        </li>
+
+        <li className="navbar__list_item ">
+          <Link href="/">Zaprojektuj</Link>
+        </li>
+
+        <li className="navbar__list_item ">
+          <Link href="/">Kontakt</Link>
+        </li>
+      </ul>}
     </nav>
   );
 }
