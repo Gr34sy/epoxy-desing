@@ -1,14 +1,46 @@
 .navbar {
+  position: relative;
   background-color: $color-dark-blue;
   color: $color-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include black-box-shadow;
 }
 
-.navbar__logotype{
+.navbar__bars-icon,
+.navbar__x-icon {
+  width: 1.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar__logotype {
+  padding: 1.2rem 2rem;
+  margin-inline: 1rem;
+
+ @media(min-width: 768px){
+  border-left: 2px solid $color-golden;
+  border-right: 2px solid $color-golden;
+ }
+}
+
+.navbar__logotype_img {
   @media (max-width: 350px) {
-    width: 150px;
-    height: 30px;
+    width: 175px;
+    height: 35px;
   }
 }
 
@@ -21,13 +53,20 @@
 }
 
 .navbar__list_item {
-  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 
-  &:hover{
+  padding: 2.5rem 1.2rem;
+  transition: 1s ease-in-out;
+
+  &:hover {
     cursor: pointer;
+    background-color: $color-white-opacity;
   }
 
-  img:hover{
+  img:hover {
     cursor: pointer;
   }
 }
