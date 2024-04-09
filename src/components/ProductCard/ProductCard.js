@@ -10,7 +10,7 @@ export function ProductCard({ title, price, img, isPremium }) {
           src={img}
           alt={title}
           fill={true}
-          style={{objectFit:"cover", outline: "none", border: "none"}}
+          style={{objectFit:"cover"}}
         />
        </div>
 

@@ -5,6 +5,13 @@
   @include black-box-shadow;
 }
 
+.navbar__logotype{
+  @media (max-width: 350px) {
+    width: 150px;
+    height: 30px;
+  }
+}
+
 .navbar__list {
   list-style: none;
 
