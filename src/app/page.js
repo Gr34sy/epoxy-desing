@@ -1,15 +1,24 @@
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 
+// images
+import absolut from "../assets/images/products/absolut.jpg";
+import jagermeister from '../assets/images/products/jagermeister.jpg';
+import bombaj from '../assets/images/products/bombaj.jpg';
+
 export default function Home() {
   return (
     <main className="page">
-      <div>
+      {/* <div>
         <h1 className="header">
           Strona w trakcie przebudowy! <br/>
           <span>Zapraszamy Niebawem</span>
         </h1>
-      </div>
-      <ProductCard />
+      </div> */}
+
+  
+      <ProductCard title="Absolut" price="120" img={absolut} isPremium/>
+      <ProductCard title="Jagermeister" price="120" img={jagermeister}/>
+      <ProductCard title="Bombaj" price="120" img={bombaj}/>
     </main>
   );
 }

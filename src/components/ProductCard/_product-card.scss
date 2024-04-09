@@ -5,9 +5,7 @@
 
     background-color: $color-white;
     border-radius: 20px;
-
     color: $color-black;
-    text-align: center;
 
 
    transition: 1s ease-in-out;
@@ -28,15 +26,32 @@
     }
 }
 
+.product-card__img{
+    width: 100%;
+    position: relative;
+}
 .product-card__title{
     font-size: 1.5rem;
     font-weight: 600;
-    // letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
 }
 .product-card__price{
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
     font-size: 1.2rem;
     font-weight: 100;
     color: $color-golden;
+
+    span{
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        padding: 0.2rem;
+        border: 1px solid $color-golden;
+    }
 }
 
 .product-card:hover{
