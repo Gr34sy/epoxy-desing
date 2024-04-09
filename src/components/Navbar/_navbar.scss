@@ -2,9 +2,7 @@
   background-color: $color-dark-blue;
   color: $color-white;
 
-  -webkit-box-shadow: -1px 6px 24px 0px $color-black;
-  -moz-box-shadow: -1px 6px 24px 0px $color-black;
-  box-shadow: -1px 6px 24px 0px $color-black;
+  @include black-box-shadow;
 }
 
 .navbar__list {
