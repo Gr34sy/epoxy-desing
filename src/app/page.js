@@ -1,9 +1,11 @@
+// components
+import { Grid } from "@/components/Grid/Grid";
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 
 // images
 import absolut from "../assets/images/products/absolut.jpg";
-import jagermeister from '../assets/images/products/jagermeister.jpg';
-import bombaj from '../assets/images/products/bombaj.jpg';
+import jagermeister from "../assets/images/products/jagermeister.jpg";
+import bombaj from "../assets/images/products/bombaj.jpg";
 
 export default function Home() {
   return (
@@ -15,10 +17,17 @@ export default function Home() {
         </h1>
       </div> */}
 
-  
-      <ProductCard title="Absolut" price="120" img={absolut} isPremium/>
-      <ProductCard title="Jagermeister" price="120" img={jagermeister}/>
-      <ProductCard title="Bombaj" price="120" img={bombaj}/>
+      <Grid>
+        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
+        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
+        <ProductCard title="Bombaj" price="120" img={bombaj} />
+        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
+        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
+        <ProductCard title="Bombaj" price="120" img={bombaj} />
+        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
+        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
+        <ProductCard title="Bombaj" price="120" img={bombaj} />
+      </Grid>
     </main>
   );
 }

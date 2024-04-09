@@ -24,6 +24,6 @@ a {
 .layout{
   --max-width: 1024px;
 
-  width: min(100% - 2rem, var(--max-width));
+  width: min(100% - 4rem, var(--max-width));
   margin-inline: auto;
 }
