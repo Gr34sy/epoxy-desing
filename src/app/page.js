@@ -1,3 +1,5 @@
+import { ProductCard } from "@/components/ProductCard/ProductCard";
+
 export default function Home() {
   return (
     <main className="page">
@@ -7,6 +9,7 @@ export default function Home() {
           <span>Zapraszamy Niebawem</span>
         </h1>
       </div>
+      <ProductCard />
     </main>
   );
 }

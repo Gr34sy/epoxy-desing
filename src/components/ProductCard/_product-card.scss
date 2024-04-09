@@ -1,0 +1,25 @@
+.product-card{
+    height: 400px;
+    width: min(80%, 280px);
+    margin-inline: auto;
+
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: 20px;
+
+   transition: 1s ease-in-out;
+}
+
+.product-card__wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover{
+    transform: scale(1.1);
+
+    -webkit-box-shadow: 5px 5px 0px 0px $color-golden;
+    -moz-box-shadow: 5px 5px 0px 0px $color-golden;
+    box-shadow: 5px 5px 0px 0px $color-golden;
+}
