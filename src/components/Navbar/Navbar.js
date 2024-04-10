@@ -56,7 +56,7 @@ export function Navbar() {
 
       {/* MOBILE LIST */}
       {showMobileNav && <ul className="navbar__list navbar__list--mobile">
-        <li className="navbar__list_item ">
+        <li className="navbar__list_item">
           <Link href="/">Strona Główna</Link>
         </li>
 
