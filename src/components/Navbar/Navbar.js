@@ -46,11 +46,11 @@ export function Navbar() {
 
       <ul className="navbar__list">
         <li className="navbar__list_item ">
-          <Link href="/">Zaprojektuj</Link>
+          <Link href="/design">Zaprojektuj</Link>
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Zamów</Link>
+          <Link href="/order">Zamów</Link>
         </li>
       </ul>
 
@@ -65,11 +65,11 @@ export function Navbar() {
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Zaprojektuj</Link>
+          <Link href="/design">Zaprojektuj</Link>
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Zamów</Link>
+          <Link href="/order">Zamów</Link>
         </li>
       </ul>}
     </nav>
