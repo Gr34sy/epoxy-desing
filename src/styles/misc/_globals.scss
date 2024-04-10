@@ -24,6 +24,10 @@ a {
 .layout{
   --max-width: 1024px;
 
-  width: min(100% - 4rem, var(--max-width));
+  width: calc(100% - 1.4rem);
   margin-inline: auto;
+
+  @media(min-width: 286px) {
+    width: min(100% - 4rem, var(--max-width));
+  }
 }

@@ -1,6 +1,11 @@
 .grid__container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
+    grid-template-columns: minmax(180px, 280px);
+    justify-content: center;
     gap: 1.9rem;
     padding-block: 5rem;
+
+    @media(min-width: 545px){
+        grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
+    }
 }
