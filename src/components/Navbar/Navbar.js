@@ -46,7 +46,7 @@ export function Navbar() {
 
       <ul className="navbar__list">
         <li className="navbar__list_item ">
-          <Link href="/design">Zaprojektuj</Link>
+          <Link href="/design">Sprawdź Warianty</Link>
         </li>
 
         <li className="navbar__list_item ">
@@ -57,19 +57,19 @@ export function Navbar() {
       {/* MOBILE LIST */}
       {showMobileNav && <ul className="navbar__list navbar__list--mobile">
         <li className="navbar__list_item">
-          <Link href="/" >Strona Główna</Link>
+          <Link href="/" onClick={() => setShowMobileNav(false)}>Strona Główna</Link>
         </li>
 
         <li className="navbar__list_item">
-          <Link href="/products">Produkty</Link>
+          <Link href="/products" onClick={() => setShowMobileNav(false)}>Produkty</Link>
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/design">Zaprojektuj</Link>
+          <Link href="/design" onClick={() => setShowMobileNav(false)}>Sprawdź Warianty</Link>
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/order">Zamów</Link>
+          <Link href="/order" onClick={() => setShowMobileNav(false)}>Zamów</Link>
         </li>
       </ul>}
     </nav>
