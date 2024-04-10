@@ -30,11 +30,11 @@ export function Navbar() {
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Produkty</Link>
+          <Link href="/products">Produkty</Link>
         </li>
       </ul>
 
-      <Link href="/" className="navbar__logotype">
+      <div className="navbar__logotype">
         <Image
           className="navbar__logotype_img"
           src={logotype}
@@ -42,7 +42,7 @@ export function Navbar() {
           width={175}
           height={35}
         />
-      </Link>
+      </div>
 
       <ul className="navbar__list">
         <li className="navbar__list_item ">
@@ -50,18 +50,18 @@ export function Navbar() {
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Kontakt</Link>
+          <Link href="/">Zamów</Link>
         </li>
       </ul>
 
       {/* MOBILE LIST */}
       {showMobileNav && <ul className="navbar__list navbar__list--mobile">
         <li className="navbar__list_item">
-          <Link href="/">Strona Główna</Link>
+          <Link href="/" >Strona Główna</Link>
         </li>
 
-        <li className="navbar__list_item ">
-          <Link href="/">Produkty</Link>
+        <li className="navbar__list_item">
+          <Link href="/products">Produkty</Link>
         </li>
 
         <li className="navbar__list_item ">
@@ -69,7 +69,7 @@ export function Navbar() {
         </li>
 
         <li className="navbar__list_item ">
-          <Link href="/">Kontakt</Link>
+          <Link href="/">Zamów</Link>
         </li>
       </ul>}
     </nav>

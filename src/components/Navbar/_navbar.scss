@@ -63,7 +63,9 @@
   flex-direction: column;
 
   .navbar__list_item{
-    padding: 1rem;
+    a {
+      padding: 1rem;
+    }
   }
 
   @media (min-width: 768px) {
@@ -80,8 +82,12 @@
   text-transform: uppercase;
   text-align: center;
 
-  padding: 2.5rem 0.6rem;
   transition: 1s ease-in-out;
+
+  a{
+    display: block;
+    padding: 2.5rem 0.6rem;
+  }
 
   &:hover {
     cursor: pointer;
@@ -93,6 +99,8 @@
   }
 
   @media(min-width: 955px){
-    padding-inline: 1.2rem;
+    a {
+      padding-inline: 1.2rem;
+    }
   }
 }
