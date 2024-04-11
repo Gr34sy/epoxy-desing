@@ -20,7 +20,7 @@ export function Navbar() {
     <nav className="navbar">
       <FontAwesomeIcon
         icon={showMobileNav ? faXmark : faBars}
-        className={showMobileNav ? "navbar__bars-icon" : "navbar__x-icon"}
+        className={showMobileNav ? "fontawesome-icon navbar__bars-icon" : "fontawesome-icon navbar__x-icon"}
         onClick={showMobileNav ? () => setShowMobileNav(false) : () => setShowMobileNav(true)}
       />
 

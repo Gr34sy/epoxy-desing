@@ -11,7 +11,7 @@
 html {
   min-height: 100dvh;
 
-  background-image: url("../../assets/images/bg.png");
+  background: url("../../assets/images/bg.png") $color-dark-blue;
   background-size: cover;
   background-position: top center;
 }
@@ -19,6 +19,11 @@ html {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.fontawesome-icon{
+  width: 30px;
+  height: 30px;
 }
 
 .layout{
