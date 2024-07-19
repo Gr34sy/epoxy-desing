@@ -14,3 +14,14 @@
         color: $color-golden;
     }
 }
+
+.hero__img{
+    @include next-image;
+}
+
+.hero__img-container{
+    position: relative;
+    width: min(100%, 1000px);
+    margin-inline: auto;
+    height: 600px;
+}

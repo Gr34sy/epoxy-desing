@@ -3,3 +3,7 @@
   -moz-box-shadow: -1px 6px 24px 0px $color-black;
   box-shadow: -1px 6px 24px 0px $color-black;
 }
+
+@mixin next-image{
+  object-fit: cover;
+}
