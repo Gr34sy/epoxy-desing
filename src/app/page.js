@@ -11,12 +11,6 @@ export default async function Home() {
   return (
     <main className="homepage">
       <div className="hero">
-        <h1 className="header">
-          {details.title}
-          Strona w trakcie przebudowy! <br />
-          <span>Zapraszamy Niebawem</span>
-        </h1>
-
         <div className="hero__img-container">
           <Image
             src={dummyImg}

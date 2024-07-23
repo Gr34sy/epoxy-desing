@@ -1,16 +1,16 @@
 // misc
-@import './misc/variables';
-@import './misc/mixins';
-@import './misc/reset';
-@import './misc/globals';
-
+@import "./misc/variables";
+@import "./misc/mixins";
+@import "./misc/reset";
+@import "./misc/globals";
 
 // elements
 
 // components
-@import '../components/Navbar/navbar';
-@import '../components/ProductCard/product-card';
-@import '../components/Grid/grid';
+@import "../components/Navbar/navbar";
+@import "../components/ProductCard/product-card";
+@import "../components/Grid/grid";
+@import "../components/Footer/footer";
 
 // pages
-@import './pages/homepage';
+@import "./pages/homepage";

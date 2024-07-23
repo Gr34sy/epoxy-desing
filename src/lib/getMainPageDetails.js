@@ -8,11 +8,16 @@ export async function getMainPageDetails() {
     const db = client.db("Epoxyd");
     const collection = db.collection("main-page");
     const result = await collection.findOne({});
-    if (!result) {
-      throw new Error("No main page details found");
-    }
 
-    return result;
+    return (
+      result || {
+        title: "Epoxyd Desing",
+        subtitle: "Piękno żywicy",
+        description: "",
+        backgroundImg:
+          "https://res.cloudinary.com/dkfbyid3i/image/upload/v1717160460/behresii4w8a5s3qb3nt.jpg",
+      }
+    );
   } catch (error) {
     console.error(error.message);
   } finally {

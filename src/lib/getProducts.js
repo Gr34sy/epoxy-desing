@@ -9,9 +9,6 @@ export async function getProducts() {
     const db = client.db("Epoxyd");
     const collection = db.collection("products");
     const products = await collection.find({}).toArray();
-    if (!products.length) {
-      throw new Error("No products found");
-    }
 
     return products || [];
   } catch (error) {
