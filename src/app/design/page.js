@@ -2,7 +2,7 @@ import SiteUnderConstruction from "@/components/SiteUnderConstruction/SiteUnderC
 
 export default function Design() {
   return (
-    <main className="design-page">
+    <main className="layout">
       <SiteUnderConstruction title="Przegląd dostępnych stylów już niedługo!" />
     </main>
   );

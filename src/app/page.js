@@ -9,7 +9,7 @@ export default async function Home() {
   console.log(details);
 
   return (
-    <main className="homepage">
+    <main>
       <div className="hero">
         <div className="hero__img-container">
           <Image
@@ -20,6 +20,8 @@ export default async function Home() {
           />
         </div>
       </div>
+
+      <div className="layout">Dupsko</div>
     </main>
   );
 }

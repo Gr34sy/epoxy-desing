@@ -43,3 +43,17 @@ a {
     padding-block: 5rem;
   }
 }
+
+.header {
+  text-align: center;
+  gap: 1rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-golden;
+  }
+}

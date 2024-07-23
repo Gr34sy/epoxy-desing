@@ -1,4 +1,5 @@
 .navbar {
+  z-index: 2;
   position: relative;
   background-color: $color-dark-blue;
   color: $color-white;
@@ -6,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   @include black-box-shadow;
 }
@@ -27,18 +27,18 @@
   }
 }
 
-.navbar__logotype{
+.navbar__logotype {
   padding: 1.2rem 1rem;
 
- @media(min-width: 768px){
-  margin-inline: 1rem;
-  border-left: 2px solid $color-golden;
-  border-right: 2px solid $color-golden;
- }
+  @media (min-width: 768px) {
+    margin-inline: 1rem;
+    border-left: 2px solid $color-golden;
+    border-right: 2px solid $color-golden;
+  }
 
- @media(min-width: 955px){
-  padding-inline: 2rem;
- }
+  @media (min-width: 955px) {
+    padding-inline: 2rem;
+  }
 }
 
 .navbar__list {
@@ -48,11 +48,11 @@
   justify-content: center;
   align-items: center;
 
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     display: flex;
   }
 }
-.navbar__list--mobile{
+.navbar__list--mobile {
   position: absolute;
   width: 100%;
   top: 110%;
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
 
-  .navbar__list_item{
+  .navbar__list_item {
     a {
       padding: 1rem;
     }
@@ -84,7 +84,7 @@
 
   transition: 0.5s ease-in-out;
 
-  a{
+  a {
     display: block;
     padding: 2.5rem 0.6rem;
   }
@@ -98,7 +98,7 @@
     cursor: pointer;
   }
 
-  @media(min-width: 955px){
+  @media (min-width: 955px) {
     a {
       padding-inline: 1.2rem;
     }

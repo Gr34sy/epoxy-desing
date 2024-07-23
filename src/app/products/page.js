@@ -16,7 +16,7 @@ export default async function Products() {
   console.log(products);
 
   return (
-    <main className="products-page">
+    <main className="layout">
       <Grid>
         <ProductCard title="Absolut" price="120" img={absolut} isPremium />
         <ProductCard title="Jagermeister" price="120" img={jagermeister} />

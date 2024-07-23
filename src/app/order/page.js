@@ -1,7 +1,6 @@
-
 export default function Order() {
   return (
-    <main className="order-page">
+    <main className="layout">
       <div>
         <h1 className="header">
           Zamów już niedługo! <br />

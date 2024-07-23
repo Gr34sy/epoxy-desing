@@ -1,11 +1,10 @@
-.grid__container{
-    display: grid;
-    grid-template-columns: minmax(180px, 280px);
-    justify-content: center;
-    gap: 1.9rem;
-    padding-block: 5rem;
+.grid__container {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px);
+  justify-content: center;
+  gap: 1.9rem;
 
-    @media(min-width: 545px){
-        grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
-    }
+  @media (min-width: 545px) {
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  }
 }

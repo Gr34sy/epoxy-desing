@@ -1,27 +1,10 @@
-.header{
-    margin-top: 50px;
-
-    text-align: center;
-    gap: 1rem;
-
-    font-size: 2rem;
-    font-weight: 600;
-
-
-    span{
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: $color-golden;
-    }
+.hero__img {
+  @include next-image;
 }
 
-.hero__img{
-    @include next-image;
-}
-
-.hero__img-container{
-    position: relative;
-    width: min(100%, 1000px);
-    margin-inline: auto;
-    height: 600px;
+.hero__img-container {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  height: 600px;
 }
