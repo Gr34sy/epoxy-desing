@@ -1,7 +1,7 @@
 const SiteUnderConstruction = ({ title }) => {
   return (
     <h1 className="header">
-      {title} <br />
+      {title}
       <span>Zapraszamy Niebawem</span>
     </h1>
   );

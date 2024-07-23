@@ -18,17 +18,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.fontawesome-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.layout {
+.layout{
   --max-width: 1024px;
 
   width: calc(100% - 1.4rem);
@@ -44,11 +34,22 @@ a {
   }
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fontawesome-icon {
+  width: 30px;
+  height: 30px;
+}
+
 .header {
   text-align: center;
-  gap: 1rem;
+  display: grid;
+  gap: 1.2rem;
 
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
 
   span {

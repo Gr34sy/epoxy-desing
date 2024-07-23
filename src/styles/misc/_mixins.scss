@@ -1,9 +1,9 @@
-@mixin black-box-shadow{
+@mixin black-box-shadow {
   -webkit-box-shadow: -1px 6px 24px 0px $color-black;
   -moz-box-shadow: -1px 6px 24px 0px $color-black;
   box-shadow: -1px 6px 24px 0px $color-black;
 }
 
-@mixin next-image{
+@mixin next-image {
   object-fit: cover;
 }
