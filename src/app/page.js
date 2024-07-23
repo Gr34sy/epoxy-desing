@@ -31,9 +31,13 @@ export default async function Home() {
         <ProductCard />
 
         <div className="order-cta__buttons">
-          <Button link="/order">Zamów Teraz!</Button>
+          <Button link="/order" outlined>
+            Zamów Teraz!
+          </Button>
 
-          <Button link="/products">Sprawdź kolekcję</Button>
+          <Button link="/products" outlined>
+            Sprawdź kolekcję
+          </Button>
         </div>
       </div>
 
