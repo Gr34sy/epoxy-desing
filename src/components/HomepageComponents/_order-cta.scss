@@ -1,0 +1,13 @@
+.order-cta {
+  width: min(100%, 650px);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 45px;
+  padding-block: 0;
+}
+
+.order-cta__buttons {
+  display: grid;
+  gap: 1.5rem;
+  align-self: center;
+}

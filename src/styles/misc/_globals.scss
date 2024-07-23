@@ -16,9 +16,10 @@ body {
   display: grid;
   min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
+  line-height: 1.2;
 }
 
-.layout{
+.layout {
   --max-width: 1024px;
 
   width: calc(100% - 1.4rem);
@@ -44,16 +45,24 @@ a {
   height: 30px;
 }
 
+h1.header {
+  font-size: 3rem;
+
+  span {
+    font-weight: 800;
+  }
+}
 .header {
   text-align: center;
   display: grid;
-  gap: 1.2rem;
+  margin-bottom: 1.5rem;
 
   font-size: 2.5rem;
   font-weight: 600;
 
   span {
-    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: $color-golden;
   }

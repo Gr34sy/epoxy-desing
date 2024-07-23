@@ -11,5 +11,11 @@
 @import "../components/Grid/grid";
 @import "../components/Footer/footer";
 
+// main page components
+@import "../components/HomepageComponents/about-us";
+@import "../components/HomepageComponents/hero";
+@import "../components/HomepageComponents/order-cta";
+@import "../components/HomepageComponents/video-section";
+
 // pages
-@import "./pages/homepage";
+@import "../styles/pages/homepage";

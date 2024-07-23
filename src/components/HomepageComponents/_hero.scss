@@ -1,0 +1,23 @@
+.hero__img {
+  @include next-image;
+  object-position: center center;
+  z-index: -1;
+}
+.hero__content {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  height: auto;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include black-box-shadow;
+}
+.hero__header {
+  padding: 4rem;
+  background-color: $color-blue-opacity;
+}

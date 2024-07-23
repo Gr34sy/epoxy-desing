@@ -1,0 +1,16 @@
+.video-section {
+  padding-top: 0;
+}
+
+.video-section__container {
+  width: min(100%, 700px);
+  margin-inline: auto;
+  height: 500px;
+  background-color: $color-black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: $color-golden;
+}
