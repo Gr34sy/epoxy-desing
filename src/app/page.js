@@ -1,8 +1,9 @@
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 import { getMainPageDetails } from "@/lib/getMainPageDetails";
+import { Button } from "@/components/Button/Button";
 
 import Image from "next/image";
-
+import { redirect } from "next/navigation";
 export default async function Home() {
   const details = await getMainPageDetails();
 
@@ -30,9 +31,9 @@ export default async function Home() {
         <ProductCard />
 
         <div className="order-cta__buttons">
-          <button>Zamów Teraz!</button>
+          <Button link="/order">Zamów Teraz!</Button>
 
-          <button>Sprawdź kolekcję</button>
+          <Button link="/products">Sprawdź kolekcję</Button>
         </div>
       </div>
 
