@@ -1,0 +1,41 @@
+.order {
+  display: grid;
+  gap: 4rem;
+  align-content: start;
+}
+
+.order-container {
+  padding: 2rem;
+  background-color: $color-dark-blue;
+
+  @include black-box-shadow;
+}
+
+.order__contact {
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  p {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+  }
+
+  a {
+    color: $color-golden;
+  }
+}
+
+.order__contact,
+.order__special {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.order__special {
+}
+
+.contact__icon {
+  width: 2rem;
+  height: 2rem;
+}
