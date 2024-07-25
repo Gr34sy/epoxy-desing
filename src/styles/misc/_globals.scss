@@ -46,24 +46,37 @@ a {
 }
 
 h1.header {
-  font-size: 3rem;
+  font-size: 2.2rem;
 
   span {
     font-weight: 800;
   }
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 }
+
 .header {
   text-align: center;
   display: grid;
   margin-bottom: 1.5rem;
 
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 
   span {
     margin-top: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: $color-golden;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+
+    span {
+      font-size: 1.3rem;
+    }
   }
 }

@@ -10,5 +10,9 @@
   background-color: $color-black;
   background-color: $color-dark-blue;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @include black-box-shadow;
 }

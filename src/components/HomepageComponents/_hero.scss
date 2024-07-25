@@ -7,17 +7,28 @@
   z-index: 1;
   position: relative;
   width: 100%;
-  margin-inline: auto;
   height: auto;
   height: 500px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
 
   @include black-box-shadow;
+
+  @media (min-width: 968px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .hero__header {
-  padding: 4rem;
+  padding: 1rem;
   background-color: $color-blue-opacity;
+
+  @media (max-width: 967px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1470px) {
+    padding: 2rem;
+  }
 }
