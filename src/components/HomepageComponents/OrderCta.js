@@ -7,7 +7,13 @@ const OrderCta = ({ product }) => {
       <h2 className="header">Sprawdź nasze produkty</h2>
       <div className="order-cta layout">
         <div className="order-cta__product">
-          <ProductCard />
+          <ProductCard
+            title={product.name}
+            description={product.description}
+            isPremium={product.premium}
+            price={product.price}
+            img={product.imageUrl}
+          />
         </div>
 
         <div className="order-cta__buttons">
