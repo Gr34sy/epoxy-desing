@@ -9,8 +9,6 @@ export default async function Home() {
   const products = await getProducts();
   const product = products[0];
 
-  console.log(details);
-
   return (
     <main className="homepage">
       <Hero

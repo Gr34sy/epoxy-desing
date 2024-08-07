@@ -18,15 +18,18 @@ export default async function Products() {
   return (
     <main className="layout">
       <Grid>
-        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
-        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
-        <ProductCard title="Bombaj" price="120" img={bombaj} />
-        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
-        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
-        <ProductCard title="Bombaj" price="120" img={bombaj} />
-        <ProductCard title="Absolut" price="120" img={absolut} isPremium />
-        <ProductCard title="Jagermeister" price="120" img={jagermeister} />
-        <ProductCard title="Bombaj" price="120" img={bombaj} />
+        {products.map((product) => {
+          return (
+            <ProductCard
+              key={product._id.toString()}
+              id={product._id.toString()}
+              title={product.name}
+              price={product.price}
+              img={product.imageUrl}
+              isPremium={product.premium ? product.premium : false}
+            />
+          );
+        })}
       </Grid>
     </main>
   );
