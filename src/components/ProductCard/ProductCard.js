@@ -5,14 +5,15 @@ export function ProductCard({ title, price, img, isPremium }) {
   return (
     <div className="product-card">
       <Link href="/" className="product-card__wrapper">
-       <div className="product-card__img">
-       <Image
-          src={img}
-          alt={title}
-          fill={true}
-          style={{objectFit:"cover"}}
-        />
-       </div>
+        <div className="product-card__img">
+          <Image
+            src={img}
+            alt={title}
+            fill={true}
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 544px)  100vw, (max-width:800px) 50vw, 33vw"
+          />
+        </div>
 
         <h3 className="product-card__title">{title}</h3>
         <p className="product-card__price">

@@ -6,8 +6,8 @@ import VideoSection from "@/components/HomepageComponents/VideoSection";
 import { getProducts } from "@/lib/getProducts";
 export default async function Home() {
   const details = await getMainPageDetails();
-  const producs = await getProducts();
-  const product = producs[0];
+  const products = await getProducts();
+  const product = products[0];
 
   console.log(details);
 
