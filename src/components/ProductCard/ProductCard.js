@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function ProductCard({ id, title, price, img, isPremium }) {
+export function ProductCard({ id, title, price, img, isPremium, lg }) {
   return (
     <div className="product-card">
       <Link href={`/products/${id}`} className="product-card__wrapper">
-        <div className="product-card__img">
+        <div
+          className={
+            lg ? "product-card__img product-card__img--lg" : "product-card__img"
+          }
+        >
           <Image
             src={img}
             alt={title}

@@ -8,6 +8,8 @@ const OrderCta = ({ product }) => {
       <div className="order-cta layout">
         <div className="order-cta__product">
           <ProductCard
+            lg
+            id={product._id.toString()}
             title={product.name}
             description={product.description}
             isPremium={product.premium}

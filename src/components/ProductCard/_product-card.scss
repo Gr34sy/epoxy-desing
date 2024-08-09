@@ -1,61 +1,63 @@
-.product-card{
-    height: 400px;
+.product-card {
+  background-color: $color-white;
+  border-radius: 20px;
+  color: $color-black;
 
-    background-color: $color-white;
-    border-radius: 20px;
-    color: $color-black;
+  transition: 0.4s ease-in-out;
 
-
-   transition: 0.4s ease-in-out;
-
-   @include black-box-shadow;
+  @include black-box-shadow;
 }
 
-.product-card__wrapper{
-    height: 100%;
-    padding: 1rem;
+.product-card__wrapper {
+  height: 100%;
+  padding: 1rem;
 
-    display: grid;
-    grid-template-rows: 1fr auto auto;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 1.5rem;
 
-    div{
-        background-color: $color-dark-blue;
-    }
+  div {
+    background-color: $color-dark-blue;
+  }
 }
 
-.product-card__img{
-    width: 100%;
-    position: relative;
+.product-card__img {
+  width: 100%;
+  position: relative;
+  height: 250px;
 }
-.product-card__title{
-    font-size: 1.5rem;
-    font-weight: 500;
+.product-card__img--lg {
+  height: 400px;
+}
+
+.product-card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.product-card__price {
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: $color-golden;
+
+  span {
+    font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    text-align: center;
-}
-.product-card__price{
-    display: grid;
-    gap: 0.2rem;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: $color-golden;
-
-    span{
-        font-size: 0.9rem;
-        letter-spacing: 0.1rem;
-        padding: 0.2rem;
-        border: 1px solid $color-golden;
-    }
+    padding: 0.2rem;
+    border: 1px solid $color-golden;
+  }
 }
 
-.product-card:hover{
-    transform: scale(1.1);
+.product-card:hover {
+  transform: scale(1.1);
 
-    -webkit-box-shadow: 5px 5px 0px 0px $color-golden;
-    -moz-box-shadow: 5px 5px 0px 0px $color-golden;
-    box-shadow: 5px 5px 0px 0px $color-golden;
+  -webkit-box-shadow: 5px 5px 0px 0px $color-golden;
+  -moz-box-shadow: 5px 5px 0px 0px $color-golden;
+  box-shadow: 5px 5px 0px 0px $color-golden;
 }

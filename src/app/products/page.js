@@ -5,11 +5,6 @@ import { ProductCard } from "@/components/ProductCard/ProductCard";
 // lib functions
 import { getProducts } from "@/lib/getProducts";
 
-// images
-import absolut from "../../assets/images/products/absolut.jpg";
-import jagermeister from "../../assets/images/products/jagermeister.jpg";
-import bombaj from "../../assets/images/products/bombaj.jpg";
-
 export default async function Products() {
   const products = await getProducts();
 
