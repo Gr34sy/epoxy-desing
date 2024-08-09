@@ -6,7 +6,7 @@ import { faMobileButton } from "@fortawesome/free-solid-svg-icons";
 export default function Order() {
   return (
     <main className="order layout">
-      <div className="order-container">
+      <div className="section-card">
         <h1 className="header">Kontakt</h1>
         <div className="order__contact">
           <div>
@@ -43,7 +43,7 @@ export default function Order() {
         </div>
       </div>
 
-      <div className="order-container">
+      <div className="section-card">
         <h2 className="header">Zamówienie specjalne</h2>
         <div className="order__special"></div>
       </div>

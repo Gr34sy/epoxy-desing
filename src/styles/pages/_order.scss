@@ -4,17 +4,6 @@
   align-content: start;
 }
 
-.order-container {
-  padding: 0.4rem;
-  background-color: $color-dark-blue;
-
-  @include black-box-shadow;
-
-  @media (min-width: 300px) {
-    padding: 2rem;
-  }
-}
-
 .order__contact {
   font-size: 1.2rem;
   font-weight: 300;

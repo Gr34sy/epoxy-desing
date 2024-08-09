@@ -21,7 +21,7 @@ export function ProductCard({ id, title, price, img, isPremium, lg }) {
 
         <h3 className="product-card__title">{title}</h3>
         <p className="product-card__price">
-          {price}$ {isPremium && <span>Premium</span>}
+          {price}zł {isPremium && <span>Premium</span>}
         </p>
       </Link>
     </div>
