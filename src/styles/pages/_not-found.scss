@@ -1,0 +1,14 @@
+.not-found {
+  @include flex-centered;
+
+  font-size: 2rem;
+  font-weight: 200;
+
+  span {
+    color: $color-golden;
+    font-weight: 500;
+    padding-right: 0.5rem;
+    margin-right: 1.2rem;
+    border-right: 2px solid $color-golden;
+  }
+}

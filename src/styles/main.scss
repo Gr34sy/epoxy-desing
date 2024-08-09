@@ -10,7 +10,6 @@
 @import "../components/ProductCard/product-card";
 @import "../components/Grid/grid";
 @import "../components/Footer/footer";
-@import "../components/Loading/loading";
 
 // main page components
 @import "../components/HomepageComponents/about-us";
@@ -22,3 +21,5 @@
 @import "../styles/pages/homepage";
 @import "../styles/pages/order";
 @import "../styles/pages/product-details";
+@import "../styles/pages/not-found";
+@import "../styles/pages/loading";

@@ -7,3 +7,9 @@
 @mixin next-image {
   object-fit: cover;
 }
+
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

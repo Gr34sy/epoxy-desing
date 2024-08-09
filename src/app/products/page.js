@@ -1,6 +1,5 @@
 // components
 import { Grid } from "@/components/Grid/Grid";
-import { Loading } from "@/components/Loading/Loading";
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 
 // lib functions

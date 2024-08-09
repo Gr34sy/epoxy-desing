@@ -1,7 +1,23 @@
-import { Loading } from "@/components/Loading/Loading";
-
 const loading = () => {
-  return <Loading />;
+  return (
+    <div className="loading">
+      <div className="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p className="loading__caption">Ładowanie...</p>
+    </div>
+  );
 };
 
 export default loading;

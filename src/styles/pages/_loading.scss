@@ -1,7 +1,5 @@
 .loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-centered;
 }
 .loading__caption {
   margin-left: 1rem;
