@@ -15,35 +15,25 @@ export default function ProductsClient({ initialProducts }) {
   const [sortOrder, setSortOrder] = useState("newest");
   const [premiumFilter, setPremiumFilter] = useState(false);
 
-  // useEffect(() => {
-  //   setProducts("newest");
-  // }, [sortOrder]);
-
-  function filterHandler(filterValue) {
-    if (filterValue === true) {
-      console.log("filter premium true");
-      setProducts((products) => {
-        return products.filter((product) => product.premium === filterValue);
-      });
-    } else {
-      setProducts(initialProducts);
-    }
+  function filterHandler() {
+    console.log(`action: ${sortOrder} - ${premiumFilter}`);
   }
 
   return (
     <div className="products__container">
       <div className="search-params">
         <Checkbox
-          action={(value) => setPremiumFilter}
+          action={(value) => setPremiumFilter(value)}
           name="premium-filter"
           label="Pokaż tylko produkty premium"
           initialState={premiumFilter}
         />
+
         <Select action={(value) => setSortOrder(value)} />
       </div>
 
       <div>
-        <Button>Zastosuj filtr</Button>
+        <Button action={filterHandler}>Zastosuj filtr</Button>
       </div>
 
       <Grid>

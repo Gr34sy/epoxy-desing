@@ -1,5 +1,5 @@
 .checkbox-container {
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 
@@ -12,18 +12,26 @@
     padding-left: 0.6em;
   }
 
+  @media (min-width: 365px) {
+    font-size: 1.3rem;
+  }
 }
 
 .custom-checkbox {
   -webkit-appearance: none;
   appearance: none;
 
-  width: 2.3em;
-  height: 2.3em;
+  width: 2em;
+  height: 2em;
   border-radius: 0.25em;
-  border: 0.25em solid $color-golden;
+  border: 0.25em solid $color-white;
   outline: none;
   border-radius: 50%;
+
+  @media (min-width: 365px) {
+    width: 2.3em;
+    height: 2.3em;
+  }
 }
 
 .custom-checkbox:checked {
@@ -32,10 +40,14 @@
 }
 .custom-checkbox:checked::before {
   content: "✓";
-  font-size: 1.5em;
+  font-size: 1em;
   color: $color-white;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: 365px) {
+    font-size: 1.5em;
+  }
 }
