@@ -7,10 +7,11 @@ export async function getMainPageDetails() {
     await client.connect();
     const db = client.db("Epoxyd");
     const collection = db.collection("main-page");
-    const result = await collection.findOne({});
+    const details = await collection.findOne({});
+    const normalizedDetails = { ...details, _id: "" };
 
     return (
-      result || {
+      normalizedDetails || {
         title: "Epoxyd Desing",
         subtitle: "Piękno żywicy",
         description: "",

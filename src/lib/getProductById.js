@@ -13,8 +13,9 @@ export default async function getProductById(id) {
     if (!product) {
       throw new Error(`Product with id ${id} not found.`);
     }
+    const normalizedProduct = { ...product, _id: product._id.toString() };
 
-    return product;
+    return normalizedProduct;
   } catch (error) {
     console.log(error.message);
   } finally {
