@@ -23,9 +23,7 @@ const OrderCta = ({ product }) => {
             Kolekcja
           </Button>
 
-          <Button link="/order" outlined>
-            Zamów Teraz!
-          </Button>
+          <Button link="/order">Zamów Teraz!</Button>
         </div>
       </div>
     </div>

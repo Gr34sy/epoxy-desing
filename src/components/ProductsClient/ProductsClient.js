@@ -8,16 +8,18 @@ import { ProductCard } from "@/components/ProductCard/ProductCard";
 import { useState, useEffect } from "react";
 import { Checkbox } from "../CustomCheckbox/CustomCheckbox";
 import { Select } from "../CustomSelect/CustomSelect";
+import { Button } from "../Button/Button";
 export default function ProductsClient({ initialProducts }) {
   const [products, setProducts] = useState(initialProducts);
 
   const [sortOrder, setSortOrder] = useState("newest");
+  const [premiumFilter, setPremiumFilter] = useState(false);
 
   // useEffect(() => {
   //   setProducts("newest");
   // }, [sortOrder]);
 
-  function filterPremiumHandler(filterValue) {
+  function filterHandler(filterValue) {
     if (filterValue === true) {
       console.log("filter premium true");
       setProducts((products) => {
@@ -32,11 +34,16 @@ export default function ProductsClient({ initialProducts }) {
     <div className="products__container">
       <div className="search-params">
         <Checkbox
-          action={filterPremiumHandler}
+          action={(value) => setPremiumFilter}
           name="premium-filter"
           label="Pokaż tylko produkty premium"
+          initialState={premiumFilter}
         />
         <Select action={(value) => setSortOrder(value)} />
+      </div>
+
+      <div>
+        <Button>Zastosuj filtr</Button>
       </div>
 
       <Grid>

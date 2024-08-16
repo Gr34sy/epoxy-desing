@@ -1,28 +1,38 @@
-.button {
+.custom-button,
+.button--outlined {
   transition: 0.4s ease-in-out;
   padding: 1.3rem;
   font-weight: 400;
   font-family: $font-main;
   font-size: 1.1rem;
-
-  background-color: $color-golden-opacity;
-  color: $color-black;
-  border: 2px solid $color-golden;
+  color: $color-white;
+  border: none;
 
   &:hover {
     cursor: pointer;
-    color: $color-golden;
-    background-color: transparent;
+  }
+}
+
+.custom-button {
+  @include black-box-shadow;
+  background-color: $color-golden-opacity;
+  border-radius: 1rem;
+
+  &:hover {
+    @include golden-box-shadow;
+    border-radius: 4rem;
+    background-color: $color-blue-opacity;
   }
 }
 
 .button--outlined {
-  border: 2px solid $color-golden;
-  background-color: transparent;
-  color: $color-golden;
+  @include golden-box-shadow;
+  border-radius: 4rem;
+  background-color: $color-blue-opacity;
 
   &:hover {
-    color: $color-black;
+    @include black-box-shadow;
+    border-radius: 1rem;
     background-color: $color-golden-opacity;
   }
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-export function Button({ action, outlined, link, children }) {
+export function Button({ action, link, children, outlined }) {
   const router = useRouter();
 
   function handleClick() {
@@ -18,7 +18,7 @@ export function Button({ action, outlined, link, children }) {
     <button
       type="button"
       onClick={handleClick}
-      className={outlined ? "button button--outlined" : "button"}
+      className={outlined ? "button--outlined" : "custom-button"}
     >
       {children}
     </button>

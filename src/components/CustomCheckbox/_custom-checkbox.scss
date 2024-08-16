@@ -11,6 +11,7 @@
   label {
     padding-left: 0.6em;
   }
+
 }
 
 .custom-checkbox {
@@ -20,7 +21,7 @@
   width: 2.3em;
   height: 2.3em;
   border-radius: 0.25em;
-  border: 0.15em solid $color-golden;
+  border: 0.25em solid $color-golden;
   outline: none;
   border-radius: 50%;
 }
@@ -32,7 +33,7 @@
 .custom-checkbox:checked::before {
   content: "✓";
   font-size: 1.5em;
-  color: #fff;
+  color: $color-white;
   position: absolute;
   left: 50%;
   top: 50%;
