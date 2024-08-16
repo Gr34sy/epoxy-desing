@@ -14,7 +14,7 @@ export async function getProducts() {
       _id: product._id.toString(),
     }));
 
-    return normalizedProducts || [];
+    return normalizedProducts.reverse() || [];
   } catch (error) {
     console.log(error.message);
   } finally {
