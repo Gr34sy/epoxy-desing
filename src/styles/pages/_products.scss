@@ -1,0 +1,11 @@
+.products__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.search-params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}

@@ -3,16 +3,38 @@
 // components
 import { Grid } from "@/components/Grid/Grid";
 import { ProductCard } from "@/components/ProductCard/ProductCard";
-import { SearchParams } from "./SearchParams";
 
 // hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Checkbox } from "../CustomCheckbox/CustomCheckbox";
+import { Select } from "../CustomSelect/CustomSelect";
 export default function ProductsClient({ initialProducts }) {
   const [products, setProducts] = useState(initialProducts);
 
+  const [sortOrder, setSortOrder] = useState("newest");
+  const [filterPremium, setFilterPremium] = useState(false);
+
+  // useEffect(() => {
+  //   setProducts("newest");
+  // }, [sortOrder]);
+
+  function filterPremiumHandler(filterValue) {
+    if (filterValue === true) {
+      setProducts((products) => {
+        return products.filter((product) => product.premium === filterValue);
+      });
+    } else {
+      setProducts(initialProducts);
+    }
+  }
+
   return (
-    <div>
-      <SearchParams />
+    <div className="products__container">
+      <div className="search-params">
+        <Checkbox action={filterPremiumHandler} />
+        <Select action={(value) => setSortOrder(value)} />
+      </div>
+
       <Grid>
         {products.map((product) => {
           return (

@@ -1,0 +1,57 @@
+.custom-select {
+  position: relative;
+  font-size: 1rem;
+}
+
+.custom-select select {
+  @include black-box-shadow;
+  background-color: $color-dark-blue;
+  appearance: none;
+
+  font-size: 1em;
+  padding: 1.2em 4em 1.2em 1.8em;
+  color: $color-white;
+  border: 0;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.custom-arrow {
+  top: 0;
+  right: 0;
+  width: 2.5em;
+  height: 100%;
+  background-color: $color-white-opacity;
+  position: absolute;
+  pointer-events: none;
+
+  &::after,
+  &::before {
+    --size: 0.4em;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    border-bottom: var(--size) solid $color-white;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+
+    top: 44%;
+  }
+  &::after {
+    border-top: var(--size) solid $color-white;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+
+    top: 58%;
+  }
+}
