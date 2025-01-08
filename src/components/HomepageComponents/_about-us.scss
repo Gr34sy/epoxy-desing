@@ -1,5 +1,11 @@
+.about-us {
+  padding-top: $section-block-padding;
+  background-color: $color-dark-blue;
+  z-index: 0;
+}
 .about-us__description {
-  padding-block: $section-block-padding;
+  @include blue-box-shadow;
+  padding-bottom: calc($section-block-padding/2);
   padding-inline: 1rem;
   background-color: $color-dark-blue;
   text-align: center;
