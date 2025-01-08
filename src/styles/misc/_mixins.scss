@@ -1,8 +1,14 @@
-@mixin black-box-shadow {
-  -webkit-box-shadow: -1px 6px 24px 0px $color-black;
-  -moz-box-shadow: -1px 6px 24px 0px $color-black;
-  box-shadow: -1px 6px 24px 0px $color-black;
+@mixin blue-box-shadow {
+  -webkit-box-shadow: $blue-shadow;
+  -moz-box-shadow: $blue-shadow;
+  box-shadow: $blue-shadow;
 }
+@mixin black-box-shadow {
+  -webkit-box-shadow: $black-shadow;
+  -moz-box-shadow: $black-shadow;
+  box-shadow: $black-shadow;
+}
+
 @mixin golden-box-shadow {
   -webkit-box-shadow: 0px 0px 15px 0px $color-golden;
   -moz-box-shadow: 0px 0px 15px 0px $color-golden;

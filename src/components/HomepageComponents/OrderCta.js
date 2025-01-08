@@ -1,12 +1,12 @@
-import { Button } from "../Button/Button";
-import { ProductCard } from "../ProductCard/ProductCard";
+import { Button } from '../Button/Button';
+import { ProductCard } from '../ProductCard/ProductCard';
 
 const OrderCta = ({ product }) => {
   return (
-    <div>
+    <div className="order-cta">
       <h2 className="header">Sprawdź nasze produkty</h2>
-      <div className="order-cta layout">
-        <div className="order-cta__product">
+      <div className="order-cta_container layout">
+        <div className="order-cta_container__product">
           <ProductCard
             lg
             id={product._id.toString()}
