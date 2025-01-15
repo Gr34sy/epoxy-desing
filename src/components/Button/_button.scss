@@ -6,8 +6,8 @@
   padding: 0;
 }
 
-.blob-btn {
-  $numOfBlobs: 4;
+.custom-button {
+  $numOfBlobs: 5;
   $borderW: 1px;
   $borderR: 1.4rem;
 
@@ -100,7 +100,7 @@
       }
     }
 
-    .blob-btn:hover & {
+    .custom-button:hover & {
       transform: translateZ(0) scale(1.7);
     }
   }

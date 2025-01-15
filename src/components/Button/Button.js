@@ -15,14 +15,15 @@ export function Button({ action, link, children }) {
   }
 
   return (
-    <button class="blob-btn" onClick={handleClick}>
+    <button class="custom-button" onClick={handleClick}>
       {children}
-      <span class="blob-btn__inner">
-        <span class="blob-btn__blobs">
-          <span class="blob-btn__blob"></span>
-          <span class="blob-btn__blob"></span>
-          <span class="blob-btn__blob"></span>
-          <span class="blob-btn__blob"></span>
+      <span class="custom-button__inner">
+        <span class="custom-button__blobs">
+          <span class="custom-button__blob"></span>
+          <span class="custom-button__blob"></span>
+          <span class="custom-button__blob"></span>
+          <span class="custom-button__blob"></span>
+          <span class="custom-button__blob"></span>
         </span>
       </span>
     </button>

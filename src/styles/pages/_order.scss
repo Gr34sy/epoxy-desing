@@ -4,41 +4,6 @@
   align-content: start;
 }
 
-.order__contact {
-  font-size: 1.2rem;
-  font-weight: 300;
-  display: grid;
-  gap: 1.6rem;
-
-  div {
-    display: grid;
-    align-items: center;
-    gap: 0.4rem 1.5rem;
-  }
-
-  p {
-    display: flex;
-    align-items: center;
-  }
-
-  a {
-    color: $color-golden;
-  }
-
-  @media (min-width: 500px) {
-    font-size: 1.5rem;
-
-    div {
-      grid-template-columns: auto 1fr;
-    }
-  }
-}
-
-// .order__special {
-// }
-
-.contact__icon {
-  width: 2rem;
-  height: 2rem;
-  padding-right: 0.5rem;
+.blue-box {
+  @include blue-box-shadow;
 }
